@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign up / Login Form</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="main">   
+    <input type="checkbox" id="chk" aria-hidden="true">
+
+    <div class="signup">
+      <form>
+        <label for="chk" aria-hidden="true">SIGN UP</label>
+        <input type="text" name="txt" placeholder="Enter your username..." required="">
+        <input type="email" name="email" placeholder="Enter your email..." required="">
+        <div class="password-container">
+          <input type="password" name="passsword" placeholder="Enter your password..." required="" id="signupPassword">
+          <i class="far fa-eye" id="toggleSignupPassword" style="cursor: pointer;"></i>
+        </div>
+        <button>Sign UP</button>
+      </form>
+    </div>
+
+    <div class="login">
+      <form>
+        <label for="chk" aria-hidden="true">LOGIN</label>
+        <input type="email" name="email" placeholder="Enter your email..." required="">
+        <div class="password-container">
+          <input type="password" name="pswd" placeholder="Enter your password..." required="" id="loginPassword">
+          <i class="far fa-eye" id="toggleLoginPassword" style="cursor: pointer;"></i>
+        </div>
+        <button>Login</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
